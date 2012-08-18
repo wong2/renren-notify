@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>人人消息</title>
+    <link rel="stylesheet" href="css/message-all-min.css" />
+</head>
+<body>
+
+    <div id="remind">
+        <h3>提醒</h3>
+        <p id="loading">loading...</p>
+    </div>
+
+    <script type="t/template" id="noty-tmpl">
+        <p class="clearfix">
+            <img src="{{=icon}}" />
+            <span>{{=content}}</span>
+            <a href="#" class="remove" title="删除" callback="{{=rmessagecallback}}"></a>
+        </p>
+    </script>
+    <script type="text/javascript" src="js/t.min.js"></script>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>
+</body>
+</html>

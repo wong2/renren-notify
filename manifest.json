@@ -1,0 +1,20 @@
+{
+    "name": "人人消息",
+    "version": "1.0.3",
+    "manifest_version": 2,
+    "description": "显示人人未读消息数",
+    "icons": { 
+        "16": "images/renren16.png",
+        "48": "images/renren48.png",
+        "128": "images/renren128.png" 
+    },
+    "browser_action": {
+        "default_icon": "images/renren19.png",
+        "default_title": "人人消息",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["js/zepto.min.js", "js/common.js", "background.js"]
+    },
+    "permissions": ["http://notify.renren.com/"]
+}
